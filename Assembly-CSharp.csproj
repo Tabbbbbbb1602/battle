@@ -56,10 +56,11 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\FloatingJoySticks.cs" />
     <Compile Include="Assets\Script\PlayerMove.cs" />
+    <Compile Include="Assets\Script\FloatingJoySticks.cs" />
     <Compile Include="Assets\Script\DragFingerMove.cs" />
     <Compile Include="Assets\Script\collisionHandling.cs" />
+    <Compile Include="Assets\Script\EnemyMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

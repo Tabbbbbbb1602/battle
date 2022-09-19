@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class collisionHandling : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -13,15 +12,15 @@ public class collisionHandling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject);
-        Debug.Log(gameObject.name);
-        Debug.Log(gameObject.transform.position);
-        collision.gameObject.SetActive(false);
-        Instantiate(collision.gameObject, gameObject.transform.position, Quaternion.identity);
+        // set vi tri cho player
+        if(collision.gameObject.tag == "Cube")
+        {
+            collision.gameObject.transform.position = gameObject.transform.position;
+        }
     }
 }

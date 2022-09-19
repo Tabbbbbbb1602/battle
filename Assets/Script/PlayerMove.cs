@@ -26,20 +26,20 @@ public class PlayerMove : MonoBehaviour
         
     }
 
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
         if (_floatingJoySticks.isDrag)
         {
             Move(_floatingJoySticks.direction); 
         }
-    }
+    }*/
 
-    private void Move(Vector2 direction)
+    /*private void Move(Vector2 direction)
     {
         //Debug.Log("move");
         Vector3 move = new Vector3(direction.x, 0, direction.y);
         //Debug.Log(move);
         _characterController.Move(move * speed);
     }
-
+*/
 }
